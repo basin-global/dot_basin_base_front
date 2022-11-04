@@ -31,7 +31,7 @@
 
     <div class="text-align-header">
       <p class="mt-5 price-text">
-          Domain price: {{getPrice}} {{getPaymentTokenName}}
+          Domain price: {{Math.round(getPrice)}} {{getPaymentTokenName}}
       </p>
     </div>
 
@@ -88,23 +88,23 @@
           <tbody>
             <tr>
               <td>1 character</td>
-              <td>{{getMinterTldPrice1}} {{getPaymentTokenName}}</td>
+              <td>{{Math.round(getMinterTldPrice1)}} {{getPaymentTokenName}}</td>
             </tr>
             <tr>
               <td>2 characters</td>
-              <td>{{getMinterTldPrice2}} {{getPaymentTokenName}}</td>
+              <td>{{Math.round(getMinterTldPrice2)}} {{getPaymentTokenName}}</td>
             </tr>
             <tr>
               <td>3 characters</td>
-              <td>{{getMinterTldPrice3}} {{getPaymentTokenName}}</td>
+              <td>{{Math.round(getMinterTldPrice3)}} {{getPaymentTokenName}}</td>
             </tr>
             <tr>
               <td>4 characters</td>
-              <td>{{getMinterTldPrice4}} {{getPaymentTokenName}}</td>
+              <td>{{Math.round(getMinterTldPrice4)}} {{getPaymentTokenName}}</td>
             </tr>
             <tr>
               <td>5+ characters</td>
-              <td>{{getMinterTldPrice5}} {{getPaymentTokenName}}</td>
+              <td>{{Math.round(getMinterTldPrice5)}} {{getPaymentTokenName}}</td>
             </tr>
           </tbody>
         </table>
@@ -127,7 +127,6 @@ import Referral from '../components/Referral.vue';
 import useDomainHelpers from "../hooks/useDomainHelpers";
 import useChainHelpers from "../hooks/useChainHelpers";
 import MinterAbi from "../abi/Minter.json";
-import erc20Abi from '../abi/Erc20.json';
 
 export default {
   name: "Home",

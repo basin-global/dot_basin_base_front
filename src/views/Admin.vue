@@ -59,7 +59,7 @@
       <div v-if="isUserMinterAdmin">
         <h3>Change price (1 char domains)</h3>
 
-        <p>Current price: {{getMinterTldPrice1}} ETH</p>
+        <p>Current price: {{getMinterTldPrice1}} {{getPaymentTokenName}}</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
@@ -89,7 +89,7 @@
       <div v-if="isUserMinterAdmin">
         <h3>Change price (2 char domains)</h3>
 
-        <p>Current price: {{getMinterTldPrice2}} ETH</p>
+        <p>Current price: {{getMinterTldPrice2}} {{getPaymentTokenName}}</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
@@ -119,7 +119,7 @@
       <div v-if="isUserMinterAdmin">
         <h3>Change price (3 char domains)</h3>
 
-        <p>Current price: {{getMinterTldPrice3}} ETH</p>
+        <p>Current price: {{getMinterTldPrice3}} {{getPaymentTokenName}}</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
@@ -149,7 +149,7 @@
       <div v-if="isUserMinterAdmin">
         <h3>Change price (4 char domains)</h3>
 
-        <p>Current price: {{getMinterTldPrice4}} ETH</p>
+        <p>Current price: {{getMinterTldPrice4}} {{getPaymentTokenName}}</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
@@ -179,7 +179,7 @@
       <div v-if="isUserMinterAdmin">
         <h3>Change price (5+ char domains)</h3>
 
-        <p>Current price: {{getMinterTldPrice5}} ETH</p>
+        <p>Current price: {{getMinterTldPrice5}} {{getPaymentTokenName}}</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
@@ -356,7 +356,7 @@ export default {
   computed: {
     ...mapGetters("punk", ["getTldAbi"]),
     ...mapGetters("network", ["getBlockExplorerBaseUrl"]),
-    ...mapGetters("user", ["isUserMinterAdmin", "isUserTldAdmin", "isUserRoyaltyFeeUpdater"]),
+    ...mapGetters("user", ["getPaymentTokenName", "isUserMinterAdmin", "isUserTldAdmin", "isUserRoyaltyFeeUpdater"]),
     ...mapGetters("tld", ["getMinterAddress", "getTldAddress", "getMinterPaused", "getMinterTldPrice1", "getMinterTldPrice2", "getMinterTldPrice3", "getMinterTldPrice4", "getMinterTldPrice5"]),
   },
 
