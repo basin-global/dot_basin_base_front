@@ -9,8 +9,7 @@
     <router-link v-if="isUserMinterAdmin || isUserRoyaltyFeeUpdater || isUserTldAdmin" to="/admin">Admin</router-link>
     <span v-if="isUserMinterAdmin || isUserRoyaltyFeeUpdater || isUserTldAdmin"> | </span>
 
-    <a target="_blank" href="https://www.basin.global/">Managed by BasinDAO</a> | 
-    <a target="_blank" href="https://punk.domains">Powered by Punk Domains</a>
+    <a target="_blank" href="https://www.basin.global/">By BasinDAO</a> | 
   </div>
 
   <div class="container-fluid text-center">
