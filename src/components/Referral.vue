@@ -12,8 +12,8 @@
           <div class="col-md-6 offset-md-3">
             <input 
               class="form-control text-center clipboard"
-              :value="'https://domains.basin.global/?ref=' + this.getNameOrAddress"
-              @click="copyToClipboard('https://domains.basin.gobal/?ref=' + this.getNameOrAddress)"
+              :value="'https://app.basin.global/?ref=' + this.getNameOrAddress"
+              @click="copyToClipboard('https://app.basin.gobal/?ref=' + this.getNameOrAddress)"
               readonly
             >
           </div>
