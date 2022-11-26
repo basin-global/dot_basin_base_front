@@ -5,12 +5,12 @@
 
     <!--
     <p class="punchline">
-      Domains for DAOs
+      $BASIN
     </p>
     -->
 
     <p class="logo">
-      Punk Domains
+      $BASIN
     </p>
 
     <div class="flex flex-row justify-center space-x-4">
