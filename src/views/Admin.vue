@@ -267,9 +267,9 @@
 
       <!-- Minter: ownerFreeMint -->
       <div v-if="isUserMinterAdmin">
-        <h3>Minter contract: mint a domain for free</h3>
+        <h3>Minter Contract: Admin Mint</h3>
 
-        <p>The owner of the Minter contract can mint a domain for free.</p>
+        <p>The owner of the Minter contract can mint with no fee.</p>
 
         <div class="row mt-5">
           <div class="col-md-6 offset-md-3">
