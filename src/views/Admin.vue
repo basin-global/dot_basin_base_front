@@ -5,6 +5,52 @@
   <div class="row mt-3 text-center">
     <div class="col-md-8 offset-md-2">
 
+<!-- Minter: ownerFreeMint -->
+      <div v-if="isUserMinterAdmin">
+        <h3>Minter Contract: Admin Mint</h3>
+
+        <p>The owner of the Minter contract can mint with no fee.</p>
+
+        <div class="row mt-5">
+          <div class="col-md-6 offset-md-3">
+            <input 
+              v-model="newDomain"
+              class="form-control text-center border-2 border-light"
+              placeholder="Enter a domain name (without extension)"
+            >
+          </div>
+        </div>
+
+        <p class="error" v-if="buyNotValid(newDomain).invalid">
+          <small>
+            <em>{{ buyNotValid(newDomain).message }}</em>
+          </small>
+        </p>
+
+        <div class="row mt-2">
+          <div class="col-md-6 offset-md-3">
+            <input 
+              v-model="newDomainOwner"
+              class="form-control text-center border-2 border-light"
+              placeholder="Enter a new owner address"
+            >
+          </div>
+        </div>
+
+        <button 
+          v-if="isActivated" 
+          class="btn btn-primary btn-lg mt-3" 
+          @click="mintFreeDomain" 
+          :disabled="waitingMfd || buyNotValid(newDomain).invalid"
+        >
+          <span v-if="waitingMfd" class="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>
+          <span>Mint a free domain</span>
+        </button>
+
+        <hr />
+      </div>
+      <!-- Minter: ownerFreeMint -->
+
       <!-- Minter: togglePaused -->
       <div v-if="isUserMinterAdmin">
         <h3 v-if="getMinterPaused">Unpause the minting contract</h3>
@@ -264,52 +310,6 @@
         <hr />
       </div>
       <!-- END TLD: transferOwnership -->
-
-      <!-- Minter: ownerFreeMint -->
-      <div v-if="isUserMinterAdmin">
-        <h3>Minter contract: mint a domain for free</h3>
-
-        <p>The owner of the Minter contract can mint a domain for free.</p>
-
-        <div class="row mt-5">
-          <div class="col-md-6 offset-md-3">
-            <input 
-              v-model="newDomain"
-              class="form-control text-center border-2 border-light"
-              placeholder="Enter a domain name (without extension)"
-            >
-          </div>
-        </div>
-
-        <p class="error" v-if="buyNotValid(newDomain).invalid">
-          <small>
-            <em>{{ buyNotValid(newDomain).message }}</em>
-          </small>
-        </p>
-
-        <div class="row mt-2">
-          <div class="col-md-6 offset-md-3">
-            <input 
-              v-model="newDomainOwner"
-              class="form-control text-center border-2 border-light"
-              placeholder="Enter a new owner address"
-            >
-          </div>
-        </div>
-
-        <button 
-          v-if="isActivated" 
-          class="btn btn-primary btn-lg mt-3" 
-          @click="mintFreeDomain" 
-          :disabled="waitingMfd || buyNotValid(newDomain).invalid"
-        >
-          <span v-if="waitingMfd" class="spinner-border spinner-border-sm mx-1" role="status" aria-hidden="true"></span>
-          <span>Mint a free domain</span>
-        </button>
-
-        <hr />
-      </div>
-      <!-- Minter: ownerFreeMint -->
 
     </div>
   </div>
