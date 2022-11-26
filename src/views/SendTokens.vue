@@ -11,7 +11,7 @@
 
         <div class="col-md-12 mb-3">
           <div class="container text-center">
-            <h3>Send tokens to a domain</h3>
+            <h3>Send tokens to another .basin</h3>
 
             <!-- Recipient -->
             <div class="row mt-5">
@@ -19,7 +19,7 @@
                 <input 
                   v-model="receiver"
                   class="form-control text-center border-2 border-light"
-                  placeholder="Enter the receiver's domain name"
+                  placeholder="Enter the receiver's .basin name"
                 >
               </div>
             </div>
