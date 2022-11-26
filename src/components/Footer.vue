@@ -11,9 +11,9 @@
 
     <a target="_blank" href="https://www.basin.global/">BASIN LLC</a> |
     
-    <a target="_blank" href="https://www.docs.basin.global/">Docs</a> |
+    <a target="_blank" href="https://docs.basin.global/">Docs</a> |
     
-    <a target="_blank" href="https://www.app.basin.global/">dApp</a>
+    <a target="_blank" href="https://app.basin.global/">dApp</a>
   </div>
 
   <div class="container-fluid text-center">
