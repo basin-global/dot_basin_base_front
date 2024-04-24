@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100;200;300;400;700&display=swap');
 
 @font-face { 
   font-family: "Impact";
@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Space+Grotesk', sans-serif;
   background: linear-gradient(30deg, #171717 30%, #171717 100%);
   color: #fff;
 }
