@@ -10,7 +10,7 @@
 
         <div class="col-md-12">
           <div class="container text-center">
-            <h3>Transfer domain</h3>
+            <h3>Transfer account</h3>
 
             <div class="row mt-5">
               <div class="col-md-6 offset-md-3">
