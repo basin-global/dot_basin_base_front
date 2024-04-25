@@ -119,7 +119,7 @@ export default {
               return;
             } else {
               // if not exists (holder is 0x0), show a toast
-              this.toast("This domain name has not been registered yet.", {type: TYPE.INFO});
+              this.toast("This account name has not been registered yet.", {type: TYPE.INFO});
               this.waiting = false;
               return;
             }
@@ -127,11 +127,11 @@ export default {
           }
         }
 
-        this.toast("Top-level domain ." + domArr[1] + " does not exist (if this is a mistake, contact us on Discord).", {type: TYPE.ERROR});
+        this.toast("Top-level domain ." + domArr[1] + " does not exist (if this is a mistake, contact us).", {type: TYPE.ERROR});
         this.waiting = false;
         return;
       } else {
-        this.toast("This is not a valid domain.", {type: TYPE.ERROR});
+        this.toast("This is not a valid account.", {type: TYPE.ERROR});
         this.waiting = false;
         return;
       }
