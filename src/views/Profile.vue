@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="container">
-            <h3>Domains</h3>
+            <h3>Accounts</h3>
 
             <table class="table table-hover mt-4 mb-4">
               <tbody>
@@ -51,13 +51,13 @@
 
             <p v-if="getUserSelectedNameData">
               <small><em>
-                Don't see your domain here? 
+                Don't see your account here? 
                 <span class="span-link" data-bs-toggle="modal" data-bs-target="#addDomainModal">
                   Add it manually</span>.
               </em></small>
             </p>
             <p v-else>
-              No domain? No worries, <router-link to="/">buy yourself one here!</router-link>
+              No account? No worries, <router-link to="/">buy yourself one here!</router-link>
             </p>
           </div>
         </div>
@@ -73,13 +73,13 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="addDomainModalLabel">Add your existing domain</h5>
+          <h5 class="modal-title" id="addDomainModalLabel">Add your existing account</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Enter your existing domain:</label>
-            <input type="text" placeholder="Enter domain" class="form-control border-2" id="recipient-name" v-model="existingDomain">
+            <label for="recipient-name" class="col-form-label">Enter your existing account:</label>
+            <input type="text" placeholder="Enter account" class="form-control border-2" id="recipient-name" v-model="existingDomain">
             <small><em>No transaction will be made, this is a free query.</em></small>
           </div>
         </div>
@@ -88,7 +88,7 @@
             type="button" 
             @click="addExistingDomain" 
             class="btn btn-secondary" 
-            :disabled="domainNotValid">Add domain</button>
+            :disabled="domainNotValid">Add account</button>
 
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
@@ -175,9 +175,9 @@ export default {
       const checkDomainHolder = await contract.getDomainHolder(existingDomainParts[0]);
       if (String(checkDomainHolder)===String(this.address)) {
         this.addDomainManually(existingDomainLower);
-        this.toast("Domain successfully added.", {type: TYPE.SUCCESS});
+        this.toast("Account successfully added.", {type: TYPE.SUCCESS});
       } else {
-        this.toast("This domain is not owned by your currently connected address.", {type: TYPE.ERROR});
+        this.toast("This account is not owned by your currently connected address.", {type: TYPE.ERROR});
       }
     },
   },
