@@ -5,12 +5,12 @@
 
     <!--
     <p class="punchline">
-      $BASIN
+      BASIN
     </p>
     -->
 
     <p class="logo">
-      $BASIN
+      BASIN
     </p>
 
     <div class="flex flex-row justify-center space-x-4">
