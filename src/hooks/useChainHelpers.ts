@@ -17,6 +17,10 @@ export default function useChainHelpers() {
       return "Gnosis Chain";
     } else if (chainId === 137) {
       return "Polygon";
+    } else if (chainId === 8453) {
+      return "Base";
+      } else if (chainId === 84532) {
+      return "Base Sepolia";
     } else if (chainId === 42161) {
       return "Arbitrum";
     } else if (chainId === 421611) {
@@ -70,6 +74,16 @@ export default function useChainHelpers() {
           "https://rpc.xdaichain.com",
           "https://rpc.gnosischain.com"
         ];
+      } else if (networkId === 8453) {
+        // Base Chain
+        urls = [
+          "https://mainnet.base.org"
+        ];
+      } else if (networkId === 84532) {
+        // Base Sepolia
+        urls = [
+          "https://sepolia.base.org"
+        ];  
       } else if (networkId === 42161) {
         // Arbitrum
         urls = [
@@ -143,6 +157,24 @@ export default function useChainHelpers() {
         chainName: "Optimism",
         nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
         rpcUrls: ["https://mainnet.optimism.io"]
+      }] 
+     } else if (networkName == "Base") {
+      method = "wallet_addEthereumChain"
+      params = [{ 
+        blockExplorerUrls: [ "https://explorer.base.org" ],
+        chainId: "0x2105",
+        chainName: "Base",
+        nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
+        rpcUrls: ["https://mainnet.base.org"]
+      }]
+    } else if (networkName == "Base Sepolia") {
+      method = "wallet_addEthereumChain"
+      params = [{ 
+        blockExplorerUrls: [ "https://sepolia-explorer.base.org" ],
+        chainId: "0x14a34",
+        chainName: "Base Sepolia",
+        nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
+        rpcUrls: ["https://sepolia.base.org"]
       }] 
     } else if (networkName == "Optimism Testnet") {
       method = "wallet_addEthereumChain"
