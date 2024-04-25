@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
         <img src="../assets/logo.png" alt="" width="30" class="d-inline-block align-middle navbar-img">
-        $BASIN
+        BASIN
       </router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,8 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
                 <router-link tag="li" class="dropdown-item" to="/profile">Profile</router-link>
-                <router-link tag="li" class="dropdown-item" to="/">Buy $BASIN</router-link>
-                <router-link tag="li" class="dropdown-item" to="/search-domain">Search $BASIN's</router-link>
+                <router-link tag="li" class="dropdown-item" to="/">Buy .BASIN</router-link>
+                <router-link tag="li" class="dropdown-item" to="/search-domain">Search BASIN's</router-link>
                 <router-link tag="li" class="dropdown-item" to="/send-tokens">Send tokens</router-link>
                 <router-link tag="li" class="dropdown-item" to="/about">About</router-link>
                 <!-- <router-link tag="li" class="dropdown-item" to="/browser">Browser extension</router-link> -->
@@ -116,7 +116,7 @@ export default {
   cursor: pointer;
 }
 .navbar-brand {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-family: 'Space+Grotesk', Arial, Helvetica, sans-serif;
 }
 .navbar-dark .navbar-brand {
   /*color: #fff;*/
