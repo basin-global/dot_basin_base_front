@@ -13,16 +13,14 @@
     
     <a target="_blank" href="https://docs.basin.global/">Docs</a> |
     
-    <a target="_blank" href="https://app.basin.global/">dApp</a>
+    <a target="_blank" href="https://base.basin.global/">dApp</a>
   </div>
 
   <div class="container-fluid text-center">
 
     <a class="icons" target="_blank" href="https://github.com/basin-global"><i class="bi bi-github"></i></a>
 
-    <a class="icons" target="_blank" href="https://www.linkedin.com/company/basinglobal/"><i class="bi bi-linkedin"></i></a>
-
-    <a class="icons" target="_blank" href="https://twitter.com/basinDAO"><i class="bi bi-twitter"></i></a>
+    <a class="icons" target="_blank" href="https://twitter.com/dot_basin"><i class="bi bi-twitter"></i></a>
     
   </div>
 </template>
