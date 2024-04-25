@@ -30,11 +30,11 @@
     </router-link>
 
     <router-link class="btn btn-sidebar text-start" to="/">
-      <i class="bi bi-cart4"></i> Buy $BASIN
+      <i class="bi bi-cart4"></i> Buy BASIN
     </router-link>
 
     <router-link class="btn btn-sidebar text-start" to="/search-domain">
-      <i class="bi bi-search"></i> Search $BASIN's
+      <i class="bi bi-search"></i> Search BASIN's
     </router-link>
 
     <router-link class="btn btn-sidebar text-start" to="/send-tokens">
