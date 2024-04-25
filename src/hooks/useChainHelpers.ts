@@ -161,7 +161,7 @@ export default function useChainHelpers() {
      } else if (networkName == "Base") {
       method = "wallet_addEthereumChain"
       params = [{ 
-        blockExplorerUrls: [ "https://explorer.base.org" ],
+        blockExplorerUrls: [ "https://basescan.org/" ],
         chainId: "0x2105",
         chainName: "Base",
         nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
@@ -170,7 +170,7 @@ export default function useChainHelpers() {
     } else if (networkName == "Base Sepolia") {
       method = "wallet_addEthereumChain"
       params = [{ 
-        blockExplorerUrls: [ "https://sepolia-explorer.base.org" ],
+        blockExplorerUrls: [ "https://sepolia.basescan.org/" ],
         chainId: "0x14a34",
         chainName: "Base Sepolia",
         nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
