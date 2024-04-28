@@ -7,16 +7,16 @@ export default {
   namespaced: true,
   
   state: () => ({
-    networkCurrency: "MATIC",
+    networkCurrency: "ETH",
     networkName: "Unsupported Network",
     supportedNetworks: {
-      137: "Polygon"
+      84532: "Base Sepolia"
     }
   }),
 
   getters: { 
     getBlockExplorerBaseUrl() {
-      return "https://polygonscan.com/";
+      return "https://sepolia.basescan.org/";
     },
     
     getChainId() {
