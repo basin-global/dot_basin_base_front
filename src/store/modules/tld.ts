@@ -11,10 +11,10 @@ export default {
   state: () => ({ 
     discountPercentage: 0,
     tldName: ".basin",
-    tldAddress: "0x4bF5A99eA2F8De061f7D77BA9edd749503D945Da", // TODO
+    tldAddress: "0x608EdA40bE224d85D79c2b7d274dC4bb75be5eFA", // TODO
     tldContract: null,
-    tldChainId: 137,
-    tldChainName: "Polygon",
+    tldChainId: 84532,
+    tldChainName: "Base Sepolia",
     minterAddress: "0x1B4F264EB7A28a6aF7CC7B8ff447F921a151f018", // TODO
     minterContract: null,
     minterPaused: true,
