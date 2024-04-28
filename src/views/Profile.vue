@@ -13,7 +13,7 @@
           <div class="container text-center">
             <h3><i class="bi bi-exclamation-triangle"></i> Not connected <i class="bi bi-exclamation-triangle"></i></h3>
             <p class="text-break">
-              Please connect with your wallet to see your profile data.
+              Please connect with your account to see your profile data.
             </p>
           </div>
         </div>
