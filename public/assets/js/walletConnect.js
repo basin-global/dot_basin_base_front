@@ -267,6 +267,8 @@
         69: "optimism-kovan",
 				137: "polygon-mainnet",
         42161: "arbitrum-mainnet",
+				8453: "base-mainnet",
+				84532: "base-sepolia",
 				80001: "polygon-mainnet",
 				421611: "arbitrum-rinkeby"
 			};
@@ -393,10 +395,10 @@
 		}
 
 		function H(e, t) {
-      e = 137; // selected chain ID
+      e = 84532; // selected chain ID
 			let r;
 			const n = s[e];
-			return n && (r = `https://polygon-rpc.com`), r
+			return n && (r = `https://sepolia.base.org`), r
 		}
 
 		function z(e, t) {
