@@ -47,7 +47,7 @@
             </div>
           </div>
 
-          <button v-else class="btn btn-primary" @click="open">Connect wallet</button>
+          <button v-else class="btn btn-primary" @click="open">Connect</button>
         </div>
 
       </div>
