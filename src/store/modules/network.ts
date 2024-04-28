@@ -67,8 +67,8 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Polygon";
-      state.networkCurrency = "MATIC";
+      state.networkName = "Base Sepolia";
+      state.networkCurrency = "ETH";
     }
   },
 
