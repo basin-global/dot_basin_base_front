@@ -279,6 +279,21 @@ export default {
       });
     },
 
+      getFormattedPrice(price) {
+      // if price is less than 0.001, show 6 decimals etc.
+      if (price < 0.001) {
+        return Number(price).toFixed(4);
+      } else if (price < 0.01) {
+        return Number(price).toFixed(3);
+      } else if (price < 0.1) {
+        return Number(price).toFixed(2);
+      } else if (price < 1) {
+        return Number(price).toFixed(1);
+      } else if (price < 10) {
+        return Number(price).toFixed(1);
+      }
+    }
+
   },
 
   setup() {
