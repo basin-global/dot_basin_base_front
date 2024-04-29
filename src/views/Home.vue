@@ -284,7 +284,7 @@ export default {
       if (price < 0.001) {
         return Number(price).toFixed(4);
       } else if (price < 0.01) {
-        return Number(price).toFixed(3);
+        return Number(price).toFixed(4);
       } else if (price < 0.1) {
         return Number(price).toFixed(2);
       } else if (price < 1) {
