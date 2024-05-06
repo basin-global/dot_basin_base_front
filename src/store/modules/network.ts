@@ -10,13 +10,13 @@ export default {
     networkCurrency: "ETH",
     networkName: "Unsupported Network",
     supportedNetworks: {
-      84532: "Base Sepolia"
+      8453: "Base"
     }
   }),
 
   getters: { 
     getBlockExplorerBaseUrl() {
-      return "https://sepolia.basescan.org/";
+      return "https://basescan.org/";
     },
     
     getChainId() {
@@ -67,7 +67,7 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Base Sepolia";
+      state.networkName = "Base";
       state.networkCurrency = "ETH";
     }
   },
