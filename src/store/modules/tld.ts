@@ -11,18 +11,18 @@ export default {
   state: () => ({ 
     discountPercentage: 0,
     tldName: ".basin",
-    tldAddress: "0x6698E22E15fe5f1AADCE26281e8eDB9b05a9C5B5", // TODO
+    tldAddress: "0x76AC406218413950DB2b050f7C3449AB5E24AABc", // TODO
     tldContract: null,
-    tldChainId: 84532,
-    tldChainName: "Base Sepolia",
-    minterAddress: "0xC612FD16A6391e08fe576Ef9987B9Fb4E735e7C4", // TODO
+    tldChainId: 8453,
+    tldChainName: "Base",
+    minterAddress: "0x62102E13Fe2Ed33073CeCb4d63D98D0E13c5FA7d", // TODO
     minterContract: null,
     minterPaused: true,
-    minterTldPrice1: 999,
-    minterTldPrice2: 299,
-    minterTldPrice3: 99,
-    minterTldPrice4: 25,
-    minterTldPrice5: 10
+    minterTldPrice1: 0.10,
+    minterTldPrice2: 0.050,
+    minterTldPrice3: 0.025,
+    minterTldPrice4: 0.010,
+    minterTldPrice5: 0.0050
   }),
 
   getters: { 
