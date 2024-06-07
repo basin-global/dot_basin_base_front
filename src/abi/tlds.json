@@ -1,6 +1,11 @@
 { 
   "8453": {
     ".basin": "0x76AC406218413950DB2b050f7C3449AB5E24AABc",
-    ".situs": "0xcFD18A8eD73087C8c6ABbf6edcdB30aD2fa0FEc7"
+    ".situs": "0xcFD18A8eD73087C8c6ABbf6edcdB30aD2fa0FEc7",
+    ".boulder": "0xd93F89217FcF5F51414e90F62CFe7EeB549a13bc",
+    ".regen": "0x3f06d9Abaa7EeF71A4f8017dc24cd6bb38Fd779d",
+    ".mumbai": "0x79987d81FC1a3Fb89df60aBefeC5cFb9b75Cc2D9",
+    ".refi": "0x6a4B6A20C0910A8A7B11A5F7DCF40CdB088B6622"
+    
   }
 }
